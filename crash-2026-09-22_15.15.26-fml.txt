@@ -1,0 +1,448 @@
+---- Minecraft Crash Report ----
+
+// Hi. I'm Connector, and I'm a crashaholic
+=========================
+SINYTRA CONNECTOR IS PRESENT!
+Please verify issues are not caused by Connector before reporting them to mod authors.
+If you're unsure, file a report on Connector's issue tracker found at https://github.com/Sinytra/Connector/issues.
+=========================
+
+// Embeddium instance tainted by mods: [entity_texture_features, sodiumoptionsapi, oculus, acedium, acceleratedrendering, embeddium_extra]
+// Please do not reach out for Embeddium support without removing these mods first.
+// -------
+// There are four lights!
+
+Time: 2026-09-22 15:15:26
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:60) ~[forge-1.20.1-47.4.23-universal.jar%23351!/:?] {re:mixin,re:classloading,pl:mixin:APP:connectormod.mixins.json:CrashReportExtenderMixin from mod connectormod,pl:mixin:APP:embeddium.mixins.json:core.CrashReportExtenderMixin from mod embeddium,pl:mixin:A}
+	at net.minecraftforge.client.loading.ClientModLoader.completeModLoading(ClientModLoader.java:135) ~[forge-1.20.1-47.4.23-universal.jar%23351!/:?] {re:classloading}
+	at net.minecraft.client.Minecraft.lambda$new$4(Minecraft.java:571) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.Util.m_137521_(Util.java:421) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:modernfix-modernfix.mixins.json:perf.thread_priorities.UtilMixin from mod modernfix,pl:mixin:APP:c2me-opts-allocs.mixins.json:MixinUtil from mod c2me_opts_allocs,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.client.Minecraft.lambda$new$5(Minecraft.java:564) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraftforge.client.loading.ForgeLoadingOverlay.m_88315_(ForgeLoadingOverlay.java:146) ~[forge-1.20.1-47.4.23-universal.jar%23351!/:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:954) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:mixins.modernui-forge.json:MixinGameRenderer from mod modernui,pl:mixin:APP:mixins.modernui-textmc.json:MixinGameRenderer from mod modernui,pl:mixin:APP:polytone-common.mixins.json:GameRendererMixin from mod polytone,pl:mixin:APP:mixins.sodiumextras.json:impl.darkness.GameRendererMixin from mod sodiumextras,pl:mixin:APP:mixins.compat.shaders.replaymod.json:MixinShaderEntityRenderer from mod reforgedplaymod,pl:mixin:APP:mixins.core.replaymod.json:MixinGameRenderer from mod reforgedplaymod,pl:mixin:APP:mixins.jgui.json:MixinGameRenderer from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_Omnidirectional_Camera from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_Omnidirectional_Rotation from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_PreserveDepthDuringGuiRendering from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_PreserveDepthDuringHandRendering from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_Stereoscopic_Camera from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:Mixin_Stereoscopic_HandRenderPass from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:GameRendererAccessor from mod reforgedplaymod,pl:mixin:APP:mixins.render.replaymod.json:MixinEntityRenderer from mod reforgedplaymod,pl:mixin:APP:mixins.replay.replaymod.json:MixinCamera from mod reforgedplaymod,pl:mixin:APP:mixins.replay.replaymod.json:Mixin_ShowSpectatedHand_NoOF from mod reforgedplaymod,pl:mixin:APP:ldlib2.mixins.json:shader.GameRendererMixin from mod ldlib2,pl:mixin:APP:mixins.oculus.json:GameRendererAccessor from mod oculus,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer from mod oculus,pl:mixin:APP:mixins.oculus.json:MixinModelViewBobbing from mod oculus,pl:mixin:APP:acceleratedrendering.core.mixins.json:GameRendererMixin from mod acceleratedrendering,pl:mixin:APP:fpsmatch.mixins.json:compat.spectate.tacz.MixinGameRendererSpectatorHands from mod fpsmatch,pl:mixin:APP:cubes-without-borders.mixins.json:GameRendererMixin from mod cubes_without_borders,pl:mixin:APP:immediatelyfast-common.mixins.json:core.compat.MixinGameRenderer from mod immediatelyfast,pl:mixin:APP:sodium-extra.mixins.json:prevent_shaders.MixinGameRenderer from mod embeddium_extra,pl:mixin:APP:gnetum.mixins.json:GameRendererMixin from mod gnetum,pl:mixin:APP:nvidium.mixins.json:minecraft.MixinGameRenderer from mod acedium,pl:mixin:APP:entity_model_features.mixins.json:MixinGameRenderer from mod entity_model_features,pl:mixin:APP:entity_model_features.mixins.json:accessor.Mixin_GuiEntityTester from mod entity_model_features,pl:mixin:APP:mixins.reach-entity-attributes.json:client.GameRendererMixin from mod reach_entity_attributes,pl:mixin:APP:simplebedrockmodel.mixins.json:client.GameRendererMixin from mod simplebedrockmodel,pl:mixin:APP:forge-asyncparticles-common.mixins.json:core.tick.MixinGameRenderer from mod (unknown),pl:mixin:APP:tacz.mixins.json:client.GameRendererMixin from mod tacz,pl:mixin:APP:lrtactical.mixins.json:client.GameRendererMixin from mod lrtactical,pl:mixin:APP:embeddium.mixins.json:features.gui.hooks.console.GameRendererMixin from mod embeddium,pl:mixin:APP:imblocker-forge.mixins.json:IMEOverlayRendererV2 from mod imblocker,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer_NightVisionCompat from mod oculus,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1146) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:718) ~[client-1.20.1-20230612.114412-srg.jar%23346!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:connector_pre_launch:A}
+	at java.lang.Thread.run(Thread.java:842) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mods: NONE
+Stacktrace:
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:656) ~[Connector-1.0.0-beta.49+1.20.1.jar%23248%23253!/:0.12.11+mixin.0.8.5] {}
+-- MOD noksk --
+Details:
+	Caused by 0: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+		at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+		at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {re:mixin}
+		at java.lang.Class.forName0(Native Method) ~[?:?] {re:mixin}
+		at java.lang.Class.forName(Class.java:469) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:61) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:48) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:92) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.23.jar%23347!/:?] {re:mixin}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {re:mixin}
+
+	Caused by 1: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [nospread.mixins.json:MixinNoSpreadScreen from mod noksk] from phase [DEFAULT] in config [nospread.mixins.json] FAILED during APPLY
+		at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+		at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+		at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+		at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {re:mixin}
+		at java.lang.Class.forName0(Native Method) ~[?:?] {re:mixin}
+		at java.lang.Class.forName(Class.java:469) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:61) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+		at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:48) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:92) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+		at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.23.jar%23347!/:?] {re:mixin}
+		at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+		at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:mixin,re:computing_frames}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {re:mixin}
+
+	Mod File: /C:/Users/*/AppData/Roaming/PCL2/.minecraft/versions/BlockOffensive-1.9/mods/noksk-1.0.jar
+	Failure message: NoSpread Kill Icon Fix (noksk) has failed to load correctly
+		org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	Mod Version: 1.0.8
+	Mod Issue URL: NOT PROVIDED
+	Exception message: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on noksk$addKillIconButton could not find any targets matching 'init' in com.yby02.nospread.gui.NoSpreadScreen. Using refmap nospread.refmap.json [PREINJECT Applicator Phase -> nospread.mixins.json:MixinNoSpreadScreen from mod noksk -> Prepare Injections ->  -> handler$fpf000$noksk$addKillIconButton(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse]
+Stacktrace:
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:656) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.findTargets(InjectionInfo.java:587) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:330) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:316) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:308) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:46) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at jdk.internal.reflect.GeneratedConstructorAccessor76.newInstance(Unknown Source) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?] {re:mixin}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?] {re:mixin}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:149) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:708) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1329) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1053) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:395) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:327) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {re:mixin}
+	at java.lang.Class.forName0(Native Method) ~[?:?] {re:mixin}
+	at java.lang.Class.forName(Class.java:469) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$6(AutomaticEventSubscriber.java:61) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:48) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:92) ~[javafmllanguage-1.20.1-47.4.23.jar%23348!/:?] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.23.jar%23347!/:?] {re:mixin}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:mixin,re:computing_frames}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:mixin,re:computing_frames}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {re:mixin}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.19, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 566949384 bytes (540 MiB) / 1509949440 bytes (1440 MiB) up to 10200547328 bytes (9728 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 13
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 3.60
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: GameViewer Virtual Display Adapter
+	Graphics card #0 vendor: GameViewer
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: DriverVersion=15.6.5.199
+	Graphics card #1 name: Radeon Pro 580X
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x67df
+	Graphics card #1 versionInfo: DriverVersion=30.0.13045.22003
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 34694.17
+	Virtual memory used (MB): 15805.54
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 12 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:-OmitStackTraceInFastThrow -Xmx9728m -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:G1HeapRegionSize=32M -XX:MaxGCPauseMillis=50 -XX:+PerfDisableSharedMem -XX:MinHeapFreeRatio=25 -XX:MaxHeapFreeRatio=40
+	Loaded Shaderpack: (off)
+	Sinytra Connector: 1.0.0-beta.49+1.20.1
+		SINYTRA CONNECTOR IS PRESENT!
+		Please verify issues are not caused by Connector before reporting them to mod authors. If you're unsure, file a report on Connector's issue tracker.
+		Connector's issue tracker can be found at https://github.com/Sinytra/Connector/issues.
+		Installed Fabric mods:
+		| ================================================== | ============================== | ============================== | ==================== |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes- | Concurrent Chunk Management En | c2me_fixes_worldgen_threading_ | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-rewrit | Concurrent Chunk Management En | c2me_rewrites_chunk_serializer | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes- | Concurrent Chunk Management En | c2me_fixes_general_threading_i | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18_mapped_srg_ | Concurrent Chunk Management En | c2me                           | 0.2.0alpha.11.18     |
+		| no-double-tap-sprint-1.1.0+1.20_mapped_srg_1.20.1. | No Double Tap Sprint           | no_double_tap_sprint           | 1.1.01.20            |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-base-m | Concurrent Chunk Management En | c2me_base                      | 0.2.0alpha.11.18     |
+		| fabricskyboxes-0.7.3+mc1.20.1_mapped_srg_1.20.1.ja | FabricSkyBoxes                 | fabricskyboxes                 | 0.7.3mc1.20.1        |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$asyncutil-0 | asyncutil                      | com_ibm_async_asyncutil        | 0.1.0                |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread | Concurrent Chunk Management En | c2me_threading_lighting        | 0.2.0alpha.11.18     |
+		| animatica-0.6.1+1.20.4_mapped_srg_1.20.1.jar       | Animatica                      | animatica                      | 0.6.11.20.4          |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-w | Concurrent Chunk Management En | c2me_opts_worldgen_vanilla     | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-s | Concurrent Chunk Management En | c2me_opts_scheduling           | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-notick | Concurrent Chunk Management En | c2me_notickvd                  | 0.2.0alpha.11.18     |
+		| continuity-3.0.0+1.20.1.forge_mapped_srg_1.20.1.ja | Continuity                     | continuity                     | 3.0.01.20.1.forge    |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread | Concurrent Chunk Management En | c2me_threading_worldgen        | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-m | Concurrent Chunk Management En | c2me_opts_math                 | 0.2.0alpha.11.18     |
+		| fsb-interop-1.3.6+mc1.20.1-build.50_mapped_srg_1.2 | FabricSkyBoxes Interop         | fsb_interop                    | 1.3.6mc1.20.1-build. |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes- | Concurrent Chunk Management En | c2me_fixes_worldgen_vanilla_bu | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes- | Concurrent Chunk Management En | c2me_fixes_chunkio_threading_i | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-client | Concurrent Chunk Management En | c2me_client_uncapvd            | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$toml-3.6.5_ | toml                           | com_electronwill_night_config_ | 3.6.5                |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$threadly-7. | threadly                       | org_threadly_threadly          | 7.0                  |
+		| enhancedblockentities-0.9+1.20_mapped_srg_1.20.1.j | Enhanced Block Entities        | enhancedblockentities          | 0.91.20              |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-rewrit | Concurrent Chunk Management En | c2me_rewrites_chunkio          | 0.2.0alpha.11.18     |
+		| scrolltweaks-1.0.5+1.20.4-fabric_mapped_srg_1.20.1 | Scroll Tweaks                  | scrolltweaks                   | 1.0.5                |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-a | Concurrent Chunk Management En | c2me_opts_allocs               | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$core-3.6.5_ | core                           | com_electronwill_night_config_ | 3.6.5                |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread | Concurrent Chunk Management En | c2me_threading_chunkio         | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-c | Concurrent Chunk Management En | c2me_opts_chunk_access         | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-server | Concurrent Chunk Management En | c2me_server_utils              | 0.2.0alpha.11.18     |
+		| enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20 | SpruceUI                       | spruceui                       | 5.0.01.20            |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-w | Concurrent Chunk Management En | c2me_opts_worldgen_general     | 0.2.0alpha.11.18     |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-c | Concurrent Chunk Management En | c2me_opts_chunkio              | 0.2.0alpha.11.18     |
+		| enhancedblockentities-0.9+1.20$arrp-0.6.7_mapped_s | Runtime Resource Pack          | advanced_runtime_resource_pack | 0.6.7                |
+		| c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$exp4j-0.4.8 | exp4j                          | net_objecthunter_exp4j         | 0.4.8                |
+		| forcecloseloadingscreen-2.1.1_mapped_srg_1.20.1.ja | kennytv's epic force close loa | forcecloseworldloadingscreen   | 2.1.1                |
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.2.33.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.23.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.23.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.23.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.23.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.23.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar customskinloader-bootstrap TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-transmogrifier TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar connector_loader TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.12.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		saturn-mc1.20.1-0.1.3.jar                         |Saturn                        |saturn                        |0.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes-|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		Krypton Reno-forge-1.20.1-26.1.1-1.20.1.jar       |Krypton Reno                  |kreno                         |26.1.1-1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumextras-forge-1.0.7-1.20.1.jar               |Sodium Extras                 |sodiumextras                  |1.0.6               |COMMON_SET|Manifest: NOSIGNATURE
+		kubejs-bridge-1.11.2+1.20.1.jar                   |Connector Extras KubeJS Bridge|connectorextras_kubejs_bridge |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-rewrit|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.0.29+4ac5e37a77.jar  |Fabric Rendering Fluids (v1)  |fabric_rendering_fluids_v1    |3.0.29+4ac5e37a77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-models-v0-0.4.3+7c3892a477.jar             |Fabric Models (v0)            |fabric_models_v0              |0.4.3+7c3892a477    |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes-|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-1.5.6+fa3d1c0177.jar    |Fabric Convention Tags        |fabric_convention_tags_v1     |1.5.6+fa3d1c0177    |COMMON_SET|Manifest: NOSIGNATURE
+		modernfix-forge-5.27.83+mc1.20.1.jar              |ModernFix                     |modernfix                     |5.27.83+mc1.20.1    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v1-1.2.35+f71b366f77.jar       |Fabric Command API (v1)       |fabric_command_api_v1         |1.2.35+f71b366f77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.3+53347ba977.jar     |Fabric BlockView API (v2)     |fabric_block_view_api_v2      |1.0.3+53347ba977    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.14+561530ec77.jar       |Fabric Command API (v2)       |fabric_command_api_v2         |2.2.14+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		reforgedplaymod-1.20.1-0.3.1.jar                  |ReForgedPlay Mod              |reforgedplaymod               |0.3.1               |COMMON_SET|Manifest: NOSIGNATURE
+		rei-bridge-1.11.2+1.20.1.jar                      |Connector Extras REI Bridge   |connectorextras_rei_bridge    |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18_mapped_srg_|Concurrent Chunk Management En|c2me                          |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.9+45a670a577.jar         |Fabric Screen API (v1)        |fabric_screen_api_v1          |2.0.9+45a670a577    |COMMON_SET|Manifest: NOSIGNATURE
+		no-double-tap-sprint-1.1.0+1.20_mapped_srg_1.20.1.|No Double Tap Sprint          |no_double_tap_sprint          |1.1.01.20           |COMMON_SET|Manifest: NOSIGNATURE
+		chat_heads-0.15.7-forge-1.20.jar                  |Chat Heads                    |chat_heads                    |0.15.7              |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-base-m|Concurrent Chunk Management En|c2me_base                     |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		cloth-config-11.1.136-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.136            |COMMON_SET|Manifest: NOSIGNATURE
+		fabricskyboxes-0.7.3+mc1.20.1_mapped_srg_1.20.1.ja|FabricSkyBoxes                |fabricskyboxes                |0.7.3mc1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		ldlib2-forge-1.20.1-2.2.27+forge.1.20.1-all.jar   |LowDragLib2                   |ldlib2                        |2.2.27+forge.1.20.1 |COMMON_SET|Manifest: NOSIGNATURE
+		embeddium-0.3.31+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.31+mc1.20.1     |COMMON_SET|Manifest: NOSIGNATURE
+		terrablender-bridge-1.11.2+1.20.1.jar             |Connector Extras Terrablender |connectorextras_terrablender_b|1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.41+683d4da877.jar     |Fabric Game Rule API (v1)     |fabric_game_rule_api_v1       |1.0.41+683d4da877   |COMMON_SET|Manifest: NOSIGNATURE
+		lrarmor-1.20.1-0.1.4.4.jar                        |LesRaisinsArmor               |lrarmor                       |0.1.4.4             |COMMON_SET|Manifest: NOSIGNATURE
+		oculus-mc1.20.1-1.8.0.jar                         |Oculus                        |oculus                        |1.8.0               |COMMON_SET|Manifest: NOSIGNATURE
+		chatanimation-forge-1.3.0+mc1.20.1.jar            |ChatAnimation                 |chatanimation                 |1.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.1+4ca7515277.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.1+4ca7515277    |COMMON_SET|Manifest: NOSIGNATURE
+		worldedit-mod-7.2.15.jar                          |WorldEdit                     |worldedit                     |7.2.15+6463-5ca4dff |COMMON_SET|Manifest: NOSIGNATURE
+		squakereforged-2.0.0.jar                          |SquakeForge                   |squakereforged                |2.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		TRansition-1.0.21-1.20.1-forge-SNAPSHOT.jar       |TRansition                    |transition                    |1.0.21              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.39+a6081af|Fabric Rendering Data Attachme|fabric_rendering_data_attachme|0.3.39+a6081afc77   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$asyncutil-0|asyncutil                     |com_ibm_async_asyncutil       |0.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		acceleratedrendering-1.0.14-1.20.1-alpha.jar      |Accelerated Rendering         |acceleratedrendering          |1.0.14-1.20.1-alpha |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.3+5d6761b877.jar    |Fabric Client Tags            |fabric_client_tags_api_v1     |1.1.3+5d6761b877    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-dimensions-v1-2.1.55+8005d10d77.jar        |Fabric Dimensions API (v1)    |fabric_dimensions_v1          |2.1.55+8005d10d77   |COMMON_SET|Manifest: NOSIGNATURE
+		radium-mc1.20.1-0.12.4+git.26c9d8e.jar            |Radium                        |radium                        |0.12.4+git.26c9d8e  |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread|Concurrent Chunk Management En|c2me_threading_lighting       |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		silence_walk-1.0.0.jar                            |Silence Walk                  |silence_walk                  |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		CustomSkinLoader-Common.jar                       |CustomSkinLoader              |customskinloader              |15.0.1              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-1.0.4+6274ab9d77.jar  |Fabric Model Loading API (v1) |fabric_model_loading_api_v1   |1.0.4+6274ab9d77    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.33+561530ec77.jar|Fabric Screen Handler API (v1)|fabric_screen_handler_api_v1  |1.3.33+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		flerovium-forge-1.20.1-1.2.19-all.jar             |Flerovium                     |flerovium                     |1.2.19              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-rendering-v1-3.0.9+66e9a48f77.jar          |Fabric Rendering (v1)         |fabric_rendering_v1           |3.0.9+66e9a48f77    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.5.3+b5b2da4177.jar       |Fabric Renderer - Indigo      |fabric_renderer_indigo        |1.5.3+b5b2da4177    |COMMON_SET|Manifest: NOSIGNATURE
+		fpsmatch-1.20.1-1.3.0-forge-snapshot-20260720-1452|FPSMatch                      |fpsmatch                      |1.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		plasmovoice-forge-1.20.1-2.1.16.jar               |Plasmo Voice                  |plasmovoice                   |2.1.16              |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-fabric-compat-1.11.2+1.20.1.jar          |Connector Extras Geckolib-Fabr|connectorextras_geckolib_fabri|1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		animatica-0.6.1+1.20.4_mapped_srg_1.20.1.jar      |Animatica                     |animatica                     |0.6.11.20.4         |COMMON_SET|Manifest: NOSIGNATURE
+		starlight-1.1.2+forge.1cda73c.jar                 |Starlight                     |starlight                     |1.1.2+forge.1cda73c |COMMON_SET|Manifest: NOSIGNATURE
+		solid_mobs_forge.1.19.4+1.20-1.7.1.jar            |Solid Mobs                    |solid_mobs                    |1.7.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-particles-v1-1.1.3+78e1ecb877.jar          |Fabric Particles (v1)         |fabric_particles_v1           |1.1.3+78e1ecb877    |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.23-universal.jar                |Forge                         |forge                         |47.4.23             |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-w|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-s|Concurrent Chunk Management En|c2me_opts_scheduling          |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		polytone-1.20-3.5.26.jar                          |Polytone                      |polytone                      |1.20-3.5.26         |COMMON_SET|Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |COMMON_SET|Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		fabric-api-base-0.4.32+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.32+ef105b4977   |COMMON_SET|Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.20.1-2.25.1.jar             |Mouse Tweaks                  |mousetweaks                   |2.25.1              |COMMON_SET|Manifest: NOSIGNATURE
+		cwb-forge-3.0.0+mc1.20.jar                        |Cubes Without Borders         |cubes_without_borders         |3.0.0+mc1.20        |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.12+0e6cb7f777.jar         |Fabric Block API (v1)         |fabric_block_api_v1           |1.0.12+0e6cb7f777   |COMMON_SET|Manifest: NOSIGNATURE
+		jei-bridge-1.11.2+1.20.1.jar                      |Connector Extras JEI Bridge   |connectorextras_jei_bridge    |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-2.3.9+996d00b277|Fabric Resource Conditions API|fabric_resource_conditions_api|2.3.9+996d00b277    |COMMON_SET|Manifest: NOSIGNATURE
+		forgeconfigapiport-1.11.2+1.20.1.jar              |Forge Config API Port (Connect|forgeconfigapiport            |8.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		kffmod-4.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.12.0              |COMMON_SET|Manifest: NOSIGNATURE
+		notenoughanimations-forge-1.12.4-mc1.20.1.jar     |NotEnoughAnimations           |notenoughanimations           |1.12.4              |COMMON_SET|Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-1.0.4.jar                   |Flywheel                      |flywheel                      |1.0.4               |COMMON_SET|Manifest: NOSIGNATURE
+		xaerominimap-forge-1.20.1-26.5.0.jar              |Xaero's Minimap               |xaerominimap                  |26.5.0              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.0.14+c9161c2d77.jar    |Fabric Item Group API (v1)    |fabric_item_group_api_v1      |4.0.14+c9161c2d77   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-notick|Concurrent Chunk Management En|c2me_notickvd                 |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		entityculling-forge-1.10.5-mc1.20.1.jar           |EntityCulling                 |entityculling                 |1.10.5              |COMMON_SET|Manifest: NOSIGNATURE
+		custom-crosshair-mod-v1.5.5-forge-mc1.20.1.jar    |Custom Crosshair Mod          |custom_crosshair_mod          |1.5.5-forge         |COMMON_SET|Manifest: NOSIGNATURE
+		blockoffensive-1.20.1-1.3.0-forge-snapshot-2026071|BlockOffensive                |blockoffensive                |1.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-2.3.6+1c0ea72177.jar      |Fabric Registry Sync (v0)     |fabric_registry_sync_v0       |2.3.6+1c0ea72177    |COMMON_SET|Manifest: NOSIGNATURE
+		ImmediatelyFast-Forge-1.5.5+1.20.4.jar            |ImmediatelyFast               |immediatelyfast               |1.5.5+1.20.4        |COMMON_SET|Manifest: NOSIGNATURE
+		extrasounds-1.5.6+1.20.1-forge.jar                |ExtraSounds Next              |extrasounds                   |1.5.6               |COMMON_SET|Manifest: NOSIGNATURE
+		continuity-3.0.0+1.20.1.forge_mapped_srg_1.20.1.ja|Continuity                    |continuity                    |3.0.01.20.1.forge   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread|Concurrent Chunk Management En|c2me_threading_worldgen       |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-1.0.24+514a076577.jar        |Fabric Recipe API (v1)        |fabric_recipe_api_v1          |1.0.24+514a076577   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.5+f8c414ce77.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.5+f8c414ce77   |COMMON_SET|Manifest: NOSIGNATURE
+		rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar     |Embeddium Extra               |embeddium_extra               |0.5.4.4+mc1.20.1-bui|COMMON_SET|Manifest: NOSIGNATURE
+		ModernUI-Forge-1.20.1-3.12.0.1-universal.jar      |Modern UI                     |modernui                      |3.12.0.1            |COMMON_SET|Manifest: 01:c4:52:25:b1:6e:5f:ac:fe:88:35:7e:cf:65:2f:69:1d:56:db:2b:93:f8:dd:7c:93:47:04:8c:e4:22:13:91
+		gnetum-2.5.0+1.20.1-forge.jar                     |Gnetum                        |gnetum                        |2.5.0+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.14+4f23bd8477.jar         |Fabric Sound API (v1)         |fabric_sound_api_v1           |1.0.14+4f23bd8477   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-message-api-v1-5.1.10+52cc178c77.jar       |Fabric Message API (v1)       |fabric_message_api_v1         |5.1.10+52cc178c77   |COMMON_SET|Manifest: NOSIGNATURE
+		stop_sprinting-1.0.1-forge-1.20.1.jar             |Stop sprinting!               |stop_sprinting                |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.2.2+cf68abbe77.jar       |Fabric Renderer API (v1)      |fabric_renderer_api_v1        |3.2.2+cf68abbe77    |COMMON_SET|Manifest: NOSIGNATURE
+		BetterGrassify-1.4.4+forge.1.20.1.jar             |BetterGrassify                |bettergrass                   |1.4.4+forge.1.20.1  |COMMON_SET|Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.8.4.jar                   |GeckoLib 4                    |geckolib                      |4.8.4               |COMMON_SET|Manifest: NOSIGNATURE
+		acedium-0.2.7-beta.jar                            |Acedium                       |acedium                       |0.2.7-beta          |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-item-api-v1-2.1.29+4d0bbcfa77.jar          |Fabric Item API (v1)          |fabric_item_api_v1            |2.1.29+4d0bbcfa77   |COMMON_SET|Manifest: NOSIGNATURE
+		firstperson-forge-2.7.2-mc1.20.1.jar              |FirstPerson                   |firstperson                   |2.7.2               |COMMON_SET|Manifest: NOSIGNATURE
+		betterbiomereblend-1.5.3.jar                      |Better Biome Reblend          |betterbiomereblend            |1.5.3               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.2+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.2+30ef839e77    |COMMON_SET|Manifest: NOSIGNATURE
+		gore_and_more-1.2-forge-1.20.1.jar                |Gore and More                 |gore_and_more                 |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-m|Concurrent Chunk Management En|c2me_opts_math                |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fsb-interop-1.3.6+mc1.20.1-build.50_mapped_srg_1.2|FabricSkyBoxes Interop        |fsb_interop                   |1.3.6mc1.20.1-build.|COMMON_SET|Manifest: NOSIGNATURE
+		quick-pack-forge-1.5.0+1.20.1-all-srg.jar         |quick-pack                    |quick_pack                    |1.5.0               |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumoptionsapi-forge-1.0.10-1.20.1.jar          |Sodium Options API            |sodiumoptionsapi              |1.0.10              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-0.92.6+1.11.15+1.20.1.jar              |Forgified Fabric API          |fabric_api                    |0.92.6+1.11.15+1.20.|COMMON_SET|Manifest: NOSIGNATURE
+		modmenu-bridge-1.11.2+1.20.1.jar                  |Connector Extras ModMenu Bridg|connectorextras_modmenu_bridge|1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes-|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-content-registries-v0-4.0.13+a670df1e77.jar|Fabric Content Registries (v0)|fabric_content_registries_v0  |4.0.13+a670df1e77   |COMMON_SET|Manifest: NOSIGNATURE
+		sodiumdynamiclights-forge-1.0.10-1.20.1.jar       |Sodium Dynamic Lights         |sodiumdynamiclights           |1.0.9               |COMMON_SET|Manifest: NOSIGNATURE
+		entity_model_features-3.2.4-1.20.1-forge.jar      |Entity Model Features         |entity_model_features         |3.2.4               |COMMON_SET|Manifest: NOSIGNATURE
+		emf-compat-core-1.20.1-1.1.2.jar                  |EMF Compat: Core              |emf_compat_core               |1.1.2               |COMMON_SET|Manifest: NOSIGNATURE
+		entity_texture_features_1.20.1-forge-7.1.jar      |Entity Texture Features       |entity_texture_features       |7.1                 |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.37+67f9824077.jar    |Fabric API Lookup API (v1)    |fabric_api_lookup_api_v1      |1.6.37+67f9824077   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-fixes-|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-client|Concurrent Chunk Management En|c2me_client_uncapvd           |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		reach-entity-attributes-2.4.0.jar                 |Reach Entity Attributes       |reach_entity_attributes       |2.4.0               |COMMON_SET|Manifest: NOSIGNATURE
+		architectury-bridge-1.11.2+1.20.1.jar             |Connector Extras Architectury |connectorextras_architectury_b|1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		simplebedrockmodel-2.2.2-forge+mc1.20.1.jar       |SimpleBedrockModel            |simplebedrockmodel            |2.2.2-forge+mc1.20.1|COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$toml-3.6.5_|toml                          |com_electronwill_night_config_|3.6.5               |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$threadly-7.|threadly                      |org_threadly_threadly         |7.0                 |COMMON_SET|Manifest: NOSIGNATURE
+		Connector-1.0.0-beta.49+1.20.1-mod.jar            |Connector                     |connectormod                  |1.0.0-beta.49+1.20.1|COMMON_SET|Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |COMMON_SET|Manifest: NOSIGNATURE
+		dynamicsurroundingsforge-1.20.1-1.3.1.jar         |Dynamic Surroundings          |dsurround                     |1.20.1-1.3.1        |COMMON_SET|Manifest: NOSIGNATURE
+		dynamichitbox-1.0.1.jar                           |DynamicHitbox                 |dynamichitbox                 |1.0.1               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-loot-api-v2-1.2.3+eb28f93e77.jar           |Fabric Loot API (v2)          |fabric_loot_api_v2            |1.2.3+eb28f93e77    |COMMON_SET|Manifest: NOSIGNATURE
+		enhancedblockentities-0.9+1.20_mapped_srg_1.20.1.j|Enhanced Block Entities       |enhancedblockentities         |0.91.20             |COMMON_SET|Manifest: NOSIGNATURE
+		ConnectorExtras-1.11.2+1.20.1.jar                 |Connector Extras              |connectorextras               |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-networking-api-v1-1.3.14+fb7c822677.jar    |Fabric Networking API (v1)    |fabric_networking_api_v1      |1.3.14+fb7c822677   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-rewrit|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		scrolltweaks-1.0.5+1.20.4-fabric_mapped_srg_1.20.1|Scroll Tweaks                 |scrolltweaks                  |1.0.5               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.2.23+afab492177.jar  |Fabric Lifecycle Events (v1)  |fabric_lifecycle_events_v1    |2.2.23+afab492177   |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-a|Concurrent Chunk Management En|c2me_opts_allocs              |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		lradd-1.20.1-0.3.0.jar                            |LesRaisinsAddon               |lradd                         |0.3.0               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.38+561530ec77.jar   |Fabric Key Binding API (v1)   |fabric_key_binding_api_v1     |1.0.38+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-3.3.6+25eff73b77.jar       |Fabric Transfer API (v1)      |fabric_transfer_api_v1        |3.3.6+25eff73b77    |COMMON_SET|Manifest: NOSIGNATURE
+		AsyncParticles-20.1.3.2+1.20.1.jar                |AsyncParticles                |asyncparticles                |20.1.3.2            |COMMON_SET|Manifest: NOSIGNATURE
+		xaerolib-forge-1.20.1-1.7.3.jar                   |XaeroLib                      |xaerolib                      |1.7.3               |COMMON_SET|Manifest: NOSIGNATURE
+		pehkui-bridge-1.11.2+1.20.1.jar                   |Connector Extras Pehkui Bridge|connectorextras_pehkui_bridge |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		tacz-1.20.1-1.1.8-hotfix.jar                      |Timeless & Classics Guns: Zero|tacz                          |1.1.8-hotfix        |COMMON_SET|Manifest: NOSIGNATURE
+		csgrenades-1.20.1-2.0.3.jar                       |Counter Strike Grenades - Fork|csgrenades                    |1.20.1-2.0.3        |COMMON_SET|Manifest: NOSIGNATURE
+		lrtactical-1.20.1-0.4.3.jar                       |LesRaisins Tactical Equipments|lrtactical                    |0.4.3               |COMMON_SET|Manifest: NOSIGNATURE
+		tacz-tweaks-2.14.2-all.jar                        |TaCZ Tweaks                   |tacztweaks                    |2.14.2              |COMMON_SET|Manifest: NOSIGNATURE
+		tacz_presence-1.4.jar                             |TaCZ: Presence                |tacz_presence                 |1.4                 |COMMON_SET|Manifest: NOSIGNATURE
+		Ping-Wheel-1.12.1-forge-1.20.1.jar                |Ping Wheel                    |pingwheel                     |1.12.1              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-0.11.12+4b4151c077.jar  |Fabric Resource Loader (v0)   |fabric_resource_loader_v0     |0.11.12+4b4151c077  |COMMON_SET|Manifest: NOSIGNATURE
+		TRender-1.0.15-1.20.1-forge-SNAPSHOT.jar          |TRender                       |trender                       |1.0.15              |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$core-3.6.5_|core                          |com_electronwill_night_config_|3.6.5               |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-thread|Concurrent Chunk Management En|c2me_threading_chunkio        |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-mining-level-api-v1-2.1.52+561530ec77.jar  |Fabric Mining Level API (v1)  |fabric_mining_level_api_v1    |2.1.52+561530ec77   |COMMON_SET|Manifest: NOSIGNATURE
+		configured-forge-1.20.1-2.2.3.jar                 |Configured                    |configured                    |2.2.3               |COMMON_SET|Manifest: 0d:78:5f:44:c0:47:0c:8c:e2:63:a3:04:43:d4:12:7d:b0:7c:35:37:dc:40:b1:c1:98:ec:51:eb:3b:3c:45:99
+		entity_sound_features-0.8.1-1.20.1-forge.jar      |Entity Sound Features         |entity_sound_features         |0.8.1               |COMMON_SET|Manifest: NOSIGNATURE
+		Ixeris-4.6.5+1.20.1-forge.jar                     |Ixeris                        |ixeris                        |4.6.5+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		energy-bridge-1.11.2+1.20.1.jar                   |Connector Extras Energy Bridge|connectorextras_energy_bridge |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		watut-forge-1.20.1-1.2.3.jar                      |What Are They Up To           |watut                         |1.20.1-1.2.3        |COMMON_SET|Manifest: NOSIGNATURE
+		emf_compat_watut_1.20.1_1.0.0.jar                 |EMF Compat: WATUT             |emf_compat_watut              |1.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-c|Concurrent Chunk Management En|c2me_opts_chunk_access        |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		skinlayers3d-forge-1.11.2-mc1.20.1.jar            |3d-Skin-Layers                |skinlayers3d                  |1.11.2              |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-4.3.2+1880499|Fabric Transitive Access Widen|fabric_transitive_access_widen|4.3.2+1880499877    |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.42+1d0da21e77.jar  |Fabric BlockRenderLayer Regist|fabric_blockrenderlayer_v1    |1.1.42+1d0da21e77   |COMMON_SET|Manifest: NOSIGNATURE
+		forge-mixinsquared-forge-0.3.7-beta.3.jar         |MixinSquared                  |mixinsquared                  |0.3.7-beta.3        |COMMON_SET|Manifest: NOSIGNATURE
+		tacz_optimization-1.0.2.jar                       |Tacz Optimization             |tacz_optimization             |1.0.2               |COMMON_SET|Manifest: NOSIGNATURE
+		gd656killicon-1.3.2-1.20.1-forge.jar              |GD656Killicon                 |gd656killicon                 |1.3.2-1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		noksk-1.0.jar                                     |NoSpread Kill Icon Fix        |noksk                         |1.0.8               |ERROR     |Manifest: NOSIGNATURE
+		amecsapi-1.5.3+mc1.20-pre1.jar                    |Amecs API                     |amecsapi                      |1.5.3+mc1.20-pre1   |COMMON_SET|Manifest: NOSIGNATURE
+		CullLessLeaves-Reforged-1.20.1-1.0.5.jar          |Cull Less Leaves Reforged     |culllessleaves                |1.20.1-1.0.5        |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-server|Concurrent Chunk Management En|c2me_server_utils             |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		enhancedblockentities-0.9+1.20$spruceui-5.0.0+1.20|SpruceUI                      |spruceui                      |5.0.01.20           |COMMON_SET|Manifest: NOSIGNATURE
+		jecharacters-1.20.1-forge-4.6.9.jar               |Just Enough Characters        |jecharacters                  |4.6.9               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.14+dc36698e77.jar        |Fabric Biome API (v1)         |fabric_biome_api_v1           |13.0.14+dc36698e77  |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-w|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$c2me-opts-c|Concurrent Chunk Management En|c2me_opts_chunkio             |0.2.0alpha.11.18    |COMMON_SET|Manifest: NOSIGNATURE
+		coroutil-forge-1.20.1-1.3.7.jar                   |CoroUtil                      |coroutil                      |1.20.1-1.3.7        |COMMON_SET|Manifest: NOSIGNATURE
+		Kerria-1.3.2+1.20.1-forge.jar                     |Kerria                        |kerria                        |1.3.2+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		enhancedblockentities-0.9+1.20$arrp-0.6.7_mapped_s|Runtime Resource Pack         |advanced_runtime_resource_pack|0.6.7               |COMMON_SET|Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |COMMON_SET|Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar  |YetAnotherConfigLib           |yet_another_config_lib_v3     |3.6.6+1.20.1-forge  |COMMON_SET|Manifest: NOSIGNATURE
+		c2me-fabric-mc1.20.1-0.2.0+alpha.11.18$exp4j-0.4.8|exp4j                         |net_objecthunter_exp4j        |0.4.8               |COMMON_SET|Manifest: NOSIGNATURE
+		emi-bridge-1.11.2+1.20.1.jar                      |Connector Extras EMI Bridge   |connectorextras_emi_bridge    |1.11.2+1.20.1       |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-12.3.7+369cb3a477.ja|Fabric Data Generation API (v1|fabric_data_generation_api_v1 |12.3.7+369cb3a477   |COMMON_SET|Manifest: NOSIGNATURE
+		forcecloseloadingscreen-2.1.1_mapped_srg_1.20.1.ja|kennytv's epic force close loa|forcecloseworldloadingscreen  |2.1.1               |COMMON_SET|Manifest: NOSIGNATURE
+		IMBlocker-5.5.4-forge+1.17-1.20.4.jar             |IMBlocker                     |imblocker                     |5.5.4               |COMMON_SET|Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.6.5+0f26153f77.jar |Fabric Events Interaction (v0)|fabric_events_interaction_v0  |0.6.5+0f26153f77    |COMMON_SET|Manifest: NOSIGNATURE
+		vanillin-forge-1.20.1-1.1.3.jar                   |Vanillin                      |vanillin                      |1.1.3               |COMMON_SET|Manifest: NOSIGNATURE
+		TaczBulletImprovement-Forge-1.20.1-1.0.5.jar      |TaCZ Instant Hit              |tacz_instanthit               |1.0.5               |COMMON_SET|Manifest: NOSIGNATURE
+		PresenceFootsteps-1.20.1-1.9.1-beta.1.jar         |Presence Footsteps (Forge)    |presencefootsteps             |1.20.1-1.9.1-beta.1 |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: 67a10955-aa4d-42be-849b-2096f2947296
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.23
+	Flywheel Backend: flywheel:off
